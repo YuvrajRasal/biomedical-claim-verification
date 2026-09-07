@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+CAPSTONE_PROPOSAL.html
+CAPSTONE_PROPOSAL.md

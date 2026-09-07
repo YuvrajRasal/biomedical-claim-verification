@@ -1,0 +1,4790 @@
+{
+  "metrics": {
+    "total_evaluated": 450,
+    "accuracy": 0.8156,
+    "macro_f1": 0.793,
+    "evidence_sentence_f1": 0.5067,
+    "retrieval_recall_at_5": "0.0% (Oracle only)",
+    "faithfulness_score": 0.9917,
+    "per_class": {
+      "SUPPORTS": {
+        "precision": 0.8031,
+        "recall": 0.9444,
+        "f1": 0.8681,
+        "support": 216
+      },
+      "REFUTES": {
+        "precision": 0.8214,
+        "recall": 0.7541,
+        "f1": 0.7863,
+        "support": 122
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.8452,
+        "recall": 0.6339,
+        "f1": 0.7245,
+        "support": 112
+      }
+    }
+  },
+  "split": "validation",
+  "total_time_seconds": 120.63,
+  "throughput_claims_per_sec": 3.73,
+  "avg_latency_seconds": 2.136,
+  "sample_predictions": [
+    {
+      "index": 0,
+      "claim_id": 1,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 1,
+      "claim_id": 3,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2,
+        5
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 2,
+      "claim_id": 3,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 3,
+      "claim_id": 5,
+      "true_label": "SUPPORTS",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 4,
+      "claim_id": 13,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 5,
+      "claim_id": 36,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 6,
+      "claim_id": 42,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        1,
+        9
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 7,
+      "claim_id": 42,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 8,
+      "claim_id": 48,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 9,
+      "claim_id": 49,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 10,
+      "claim_id": 49,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 11,
+      "claim_id": 50,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 12,
+      "claim_id": 51,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 13,
+      "claim_id": 53,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 14,
+      "claim_id": 54,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 15,
+      "claim_id": 54,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 16,
+      "claim_id": 54,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 17,
+      "claim_id": 56,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 18,
+      "claim_id": 57,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 19,
+      "claim_id": 70,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5,
+        6
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 20,
+      "claim_id": 70,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 21,
+      "claim_id": 72,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 22,
+      "claim_id": 75,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 23,
+      "claim_id": 94,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 24,
+      "claim_id": 99,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 25,
+      "claim_id": 100,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 26,
+      "claim_id": 113,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 27,
+      "claim_id": 113,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 28,
+      "claim_id": 115,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 29,
+      "claim_id": 118,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 30,
+      "claim_id": 118,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 31,
+      "claim_id": 124,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 32,
+      "claim_id": 124,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 33,
+      "claim_id": 127,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 34,
+      "claim_id": 128,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 35,
+      "claim_id": 129,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 36,
+      "claim_id": 129,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 37,
+      "claim_id": 129,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 38,
+      "claim_id": 129,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        40
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 39,
+      "claim_id": 130,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 40,
+      "claim_id": 130,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 41,
+      "claim_id": 130,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 42,
+      "claim_id": 130,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        40
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 43,
+      "claim_id": 132,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 44,
+      "claim_id": 133,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3,
+        4
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 45,
+      "claim_id": 137,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7,
+        9
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 46,
+      "claim_id": 141,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 47,
+      "claim_id": 141,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 48,
+      "claim_id": 141,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 49,
+      "claim_id": 141,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 50,
+      "claim_id": 141,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 51,
+      "claim_id": 141,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 52,
+      "claim_id": 142,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 53,
+      "claim_id": 143,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 54,
+      "claim_id": 146,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 55,
+      "claim_id": 146,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 56,
+      "claim_id": 148,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 57,
+      "claim_id": 163,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 58,
+      "claim_id": 163,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 59,
+      "claim_id": 171,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 60,
+      "claim_id": 171,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 61,
+      "claim_id": 171,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 62,
+      "claim_id": 179,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 63,
+      "claim_id": 179,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 64,
+      "claim_id": 179,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 65,
+      "claim_id": 179,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 66,
+      "claim_id": 179,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 67,
+      "claim_id": 179,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 68,
+      "claim_id": 179,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 69,
+      "claim_id": 179,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 70,
+      "claim_id": 180,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 71,
+      "claim_id": 183,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 72,
+      "claim_id": 185,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 73,
+      "claim_id": 185,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 74,
+      "claim_id": 198,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 75,
+      "claim_id": 208,
+      "true_label": "SUPPORTS",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 76,
+      "claim_id": 212,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 77,
+      "claim_id": 212,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 78,
+      "claim_id": 212,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 79,
+      "claim_id": 212,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 80,
+      "claim_id": 212,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 81,
+      "claim_id": 213,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 82,
+      "claim_id": 216,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 83,
+      "claim_id": 217,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 84,
+      "claim_id": 218,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 85,
+      "claim_id": 218,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 86,
+      "claim_id": 218,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 87,
+      "claim_id": 219,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 88,
+      "claim_id": 219,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 89,
+      "claim_id": 230,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 90,
+      "claim_id": 232,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 91,
+      "claim_id": 233,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 92,
+      "claim_id": 233,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 93,
+      "claim_id": 233,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 94,
+      "claim_id": 236,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 95,
+      "claim_id": 236,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 96,
+      "claim_id": 236,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 97,
+      "claim_id": 237,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 98,
+      "claim_id": 238,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 99,
+      "claim_id": 239,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 100,
+      "claim_id": 239,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 101,
+      "claim_id": 248,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1,
+        3
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 102,
+      "claim_id": 248,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 103,
+      "claim_id": 249,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        1,
+        3
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 104,
+      "claim_id": 249,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 105,
+      "claim_id": 261,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5,
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 106,
+      "claim_id": 261,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 107,
+      "claim_id": 268,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 108,
+      "claim_id": 269,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 109,
+      "claim_id": 274,
+      "true_label": "REFUTES",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 110,
+      "claim_id": 274,
+      "true_label": "REFUTES",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 111,
+      "claim_id": 275,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 112,
+      "claim_id": 275,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 113,
+      "claim_id": 275,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 114,
+      "claim_id": 279,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 115,
+      "claim_id": 294,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 116,
+      "claim_id": 295,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2,
+        4
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 117,
+      "claim_id": 295,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5,
+        6
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 118,
+      "claim_id": 298,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 119,
+      "claim_id": 300,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 120,
+      "claim_id": 303,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 121,
+      "claim_id": 312,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 122,
+      "claim_id": 314,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3,
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 123,
+      "claim_id": 324,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 124,
+      "claim_id": 327,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 125,
+      "claim_id": 338,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        10,
+        11
+      ],
+      "pred_sentence_idx": 15,
+      "faithful": 0.85
+    },
+    {
+      "index": 126,
+      "claim_id": 338,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 15,
+      "faithful": 0.85
+    },
+    {
+      "index": 127,
+      "claim_id": 338,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        15
+      ],
+      "pred_sentence_idx": 15,
+      "faithful": 0.85
+    },
+    {
+      "index": 128,
+      "claim_id": 343,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 129,
+      "claim_id": 350,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 130,
+      "claim_id": 354,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 131,
+      "claim_id": 362,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 132,
+      "claim_id": 380,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 133,
+      "claim_id": 384,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 16,
+      "faithful": 1.0
+    },
+    {
+      "index": 134,
+      "claim_id": 385,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 135,
+      "claim_id": 386,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 136,
+      "claim_id": 386,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 137,
+      "claim_id": 388,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 138,
+      "claim_id": 399,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 139,
+      "claim_id": 399,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 140,
+      "claim_id": 410,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 141,
+      "claim_id": 411,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 142,
+      "claim_id": 415,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 143,
+      "claim_id": 421,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 144,
+      "claim_id": 431,
+      "true_label": "SUPPORTS",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 145,
+      "claim_id": 436,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 146,
+      "claim_id": 436,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 147,
+      "claim_id": 437,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 148,
+      "claim_id": 439,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 149,
+      "claim_id": 440,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 150,
+      "claim_id": 443,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4,
+        5,
+        6
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 151,
+      "claim_id": 452,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 152,
+      "claim_id": 452,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 153,
+      "claim_id": 475,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 154,
+      "claim_id": 478,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 155,
+      "claim_id": 491,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 156,
+      "claim_id": 501,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 157,
+      "claim_id": 502,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 158,
+      "claim_id": 507,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 159,
+      "claim_id": 508,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 160,
+      "claim_id": 513,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 161,
+      "claim_id": 514,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 162,
+      "claim_id": 516,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 163,
+      "claim_id": 516,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 164,
+      "claim_id": 517,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 165,
+      "claim_id": 521,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        14
+      ],
+      "pred_sentence_idx": 14,
+      "faithful": 1.0
+    },
+    {
+      "index": 166,
+      "claim_id": 525,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 167,
+      "claim_id": 527,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 168,
+      "claim_id": 528,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 169,
+      "claim_id": 532,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 170,
+      "claim_id": 532,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 171,
+      "claim_id": 532,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 172,
+      "claim_id": 532,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 173,
+      "claim_id": 533,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 174,
+      "claim_id": 533,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 175,
+      "claim_id": 533,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 176,
+      "claim_id": 533,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 177,
+      "claim_id": 535,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 178,
+      "claim_id": 536,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 179,
+      "claim_id": 539,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 180,
+      "claim_id": 539,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 181,
+      "claim_id": 540,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 182,
+      "claim_id": 544,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 183,
+      "claim_id": 549,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 184,
+      "claim_id": 551,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 185,
+      "claim_id": 552,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 186,
+      "claim_id": 554,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 187,
+      "claim_id": 560,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 188,
+      "claim_id": 569,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 189,
+      "claim_id": 575,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 190,
+      "claim_id": 577,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 191,
+      "claim_id": 578,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 192,
+      "claim_id": 578,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 193,
+      "claim_id": 578,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 194,
+      "claim_id": 587,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 195,
+      "claim_id": 589,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9,
+        10
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 196,
+      "claim_id": 589,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 197,
+      "claim_id": 593,
+      "true_label": "SUPPORTS",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 198,
+      "claim_id": 597,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 199,
+      "claim_id": 597,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6,
+        7
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 200,
+      "claim_id": 597,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 201,
+      "claim_id": 598,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 202,
+      "claim_id": 598,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 203,
+      "claim_id": 613,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 204,
+      "claim_id": 619,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        2,
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 205,
+      "claim_id": 623,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 206,
+      "claim_id": 628,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 207,
+      "claim_id": 636,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 208,
+      "claim_id": 637,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 209,
+      "claim_id": 641,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 210,
+      "claim_id": 641,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 211,
+      "claim_id": 641,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 212,
+      "claim_id": 641,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 213,
+      "claim_id": 644,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 214,
+      "claim_id": 649,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 215,
+      "claim_id": 659,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 216,
+      "claim_id": 660,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 217,
+      "claim_id": 674,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 218,
+      "claim_id": 684,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 219,
+      "claim_id": 690,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 220,
+      "claim_id": 691,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 221,
+      "claim_id": 692,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 222,
+      "claim_id": 692,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 223,
+      "claim_id": 692,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 224,
+      "claim_id": 693,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 225,
+      "claim_id": 693,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 226,
+      "claim_id": 693,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 227,
+      "claim_id": 700,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 228,
+      "claim_id": 702,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 229,
+      "claim_id": 715,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 230,
+      "claim_id": 716,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 231,
+      "claim_id": 718,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 232,
+      "claim_id": 721,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 233,
+      "claim_id": 723,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 234,
+      "claim_id": 723,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 235,
+      "claim_id": 727,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 236,
+      "claim_id": 728,
+      "true_label": "REFUTES",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 237,
+      "claim_id": 728,
+      "true_label": "REFUTES",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 238,
+      "claim_id": 729,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 239,
+      "claim_id": 742,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 240,
+      "claim_id": 743,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 241,
+      "claim_id": 744,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 242,
+      "claim_id": 756,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 243,
+      "claim_id": 759,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 14,
+      "faithful": 1.0
+    },
+    {
+      "index": 244,
+      "claim_id": 768,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 245,
+      "claim_id": 770,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        16
+      ],
+      "pred_sentence_idx": 16,
+      "faithful": 1.0
+    },
+    {
+      "index": 246,
+      "claim_id": 775,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 247,
+      "claim_id": 781,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 248,
+      "claim_id": 781,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 249,
+      "claim_id": 781,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 250,
+      "claim_id": 783,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 251,
+      "claim_id": 784,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 252,
+      "claim_id": 785,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 15,
+      "faithful": 1.0
+    },
+    {
+      "index": 253,
+      "claim_id": 793,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 254,
+      "claim_id": 800,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 255,
+      "claim_id": 805,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 256,
+      "claim_id": 805,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 257,
+      "claim_id": 808,
+      "true_label": "SUPPORTS",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 258,
+      "claim_id": 811,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 259,
+      "claim_id": 811,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 260,
+      "claim_id": 814,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 261,
+      "claim_id": 820,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 262,
+      "claim_id": 821,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 263,
+      "claim_id": 823,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        14
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 264,
+      "claim_id": 830,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 265,
+      "claim_id": 831,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 266,
+      "claim_id": 832,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 267,
+      "claim_id": 832,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 268,
+      "claim_id": 832,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6,
+        7
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 269,
+      "claim_id": 834,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 270,
+      "claim_id": 837,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 271,
+      "claim_id": 837,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 272,
+      "claim_id": 839,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 0.85
+    },
+    {
+      "index": 273,
+      "claim_id": 839,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 0.85
+    },
+    {
+      "index": 274,
+      "claim_id": 845,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 275,
+      "claim_id": 847,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 276,
+      "claim_id": 852,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 277,
+      "claim_id": 852,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 278,
+      "claim_id": 859,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 0.5
+    },
+    {
+      "index": 279,
+      "claim_id": 870,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 280,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3,
+        4
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 281,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 282,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 283,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 284,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 285,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 286,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 287,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 288,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 289,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 290,
+      "claim_id": 873,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 291,
+      "claim_id": 879,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 292,
+      "claim_id": 880,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 293,
+      "claim_id": 882,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 294,
+      "claim_id": 887,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 295,
+      "claim_id": 903,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 296,
+      "claim_id": 903,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 297,
+      "claim_id": 904,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 298,
+      "claim_id": 907,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 299,
+      "claim_id": 911,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 300,
+      "claim_id": 911,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 301,
+      "claim_id": 913,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 302,
+      "claim_id": 914,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 303,
+      "claim_id": 921,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 304,
+      "claim_id": 921,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 305,
+      "claim_id": 921,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 306,
+      "claim_id": 922,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 307,
+      "claim_id": 922,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 308,
+      "claim_id": 936,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 309,
+      "claim_id": 956,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 310,
+      "claim_id": 957,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 311,
+      "claim_id": 960,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 312,
+      "claim_id": 960,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 313,
+      "claim_id": 967,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 314,
+      "claim_id": 971,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 315,
+      "claim_id": 971,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 316,
+      "claim_id": 971,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 317,
+      "claim_id": 971,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        15
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 318,
+      "claim_id": 971,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        21
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 319,
+      "claim_id": 971,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 320,
+      "claim_id": 971,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 321,
+      "claim_id": 975,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 322,
+      "claim_id": 982,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 323,
+      "claim_id": 985,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 324,
+      "claim_id": 993,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 325,
+      "claim_id": 1012,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 326,
+      "claim_id": 1012,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 327,
+      "claim_id": 1014,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 328,
+      "claim_id": 1019,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 329,
+      "claim_id": 1020,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 330,
+      "claim_id": 1021,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 331,
+      "claim_id": 1024,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 332,
+      "claim_id": 1029,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        2,
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 333,
+      "claim_id": 1029,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 334,
+      "claim_id": 1029,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 335,
+      "claim_id": 1041,
+      "true_label": "REFUTES",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 336,
+      "claim_id": 1049,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        5,
+        6
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 337,
+      "claim_id": 1062,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 338,
+      "claim_id": 1086,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 339,
+      "claim_id": 1086,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 340,
+      "claim_id": 1086,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 341,
+      "claim_id": 1088,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 342,
+      "claim_id": 1089,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 343,
+      "claim_id": 1099,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 344,
+      "claim_id": 1100,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 345,
+      "claim_id": 1104,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 346,
+      "claim_id": 1104,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 347,
+      "claim_id": 1104,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 348,
+      "claim_id": 1104,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 349,
+      "claim_id": 1107,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 350,
+      "claim_id": 1110,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 351,
+      "claim_id": 1121,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 6,
+      "faithful": 1.0
+    },
+    {
+      "index": 352,
+      "claim_id": 1130,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 353,
+      "claim_id": 1132,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3,
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 354,
+      "claim_id": 1137,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 355,
+      "claim_id": 1137,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 356,
+      "claim_id": 1140,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 357,
+      "claim_id": 1140,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        14
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 358,
+      "claim_id": 1144,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 0.85
+    },
+    {
+      "index": 359,
+      "claim_id": 1144,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 0.85
+    },
+    {
+      "index": 360,
+      "claim_id": 1144,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 0.85
+    },
+    {
+      "index": 361,
+      "claim_id": 1146,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 362,
+      "claim_id": 1146,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 363,
+      "claim_id": 1146,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 364,
+      "claim_id": 1150,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 365,
+      "claim_id": 1150,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 366,
+      "claim_id": 1150,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 367,
+      "claim_id": 1163,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 368,
+      "claim_id": 1175,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 369,
+      "claim_id": 1179,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 370,
+      "claim_id": 1180,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        0
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 371,
+      "claim_id": 1185,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 10,
+      "faithful": 1.0
+    },
+    {
+      "index": 372,
+      "claim_id": 1187,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 373,
+      "claim_id": 1191,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 374,
+      "claim_id": 1194,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 0,
+      "faithful": 0.85
+    },
+    {
+      "index": 375,
+      "claim_id": 1196,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 376,
+      "claim_id": 1197,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 377,
+      "claim_id": 1199,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 378,
+      "claim_id": 1200,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 379,
+      "claim_id": 1202,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 380,
+      "claim_id": 1204,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 381,
+      "claim_id": 1207,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 1,
+      "faithful": 0.85
+    },
+    {
+      "index": 382,
+      "claim_id": 1213,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 383,
+      "claim_id": 1216,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 384,
+      "claim_id": 1221,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 385,
+      "claim_id": 1225,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 0.85
+    },
+    {
+      "index": 386,
+      "claim_id": 1226,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 387,
+      "claim_id": 1232,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 0.5
+    },
+    {
+      "index": 388,
+      "claim_id": 1241,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        0,
+        3,
+        4
+      ],
+      "pred_sentence_idx": 0,
+      "faithful": 1.0
+    },
+    {
+      "index": 389,
+      "claim_id": 1245,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 390,
+      "claim_id": 1259,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 391,
+      "claim_id": 1259,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 392,
+      "claim_id": 1259,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 393,
+      "claim_id": 1262,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 394,
+      "claim_id": 1266,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 395,
+      "claim_id": 1266,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 1.0
+    },
+    {
+      "index": 396,
+      "claim_id": 1270,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 397,
+      "claim_id": 1270,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 398,
+      "claim_id": 1271,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 399,
+      "claim_id": 1271,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 11,
+      "faithful": 1.0
+    },
+    {
+      "index": 400,
+      "claim_id": 1272,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 401,
+      "claim_id": 1273,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 402,
+      "claim_id": 1274,
+      "true_label": "SUPPORTS",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        4,
+        5
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 403,
+      "claim_id": 1274,
+      "true_label": "SUPPORTS",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 404,
+      "claim_id": 1278,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 405,
+      "claim_id": 1279,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 3,
+      "faithful": 1.0
+    },
+    {
+      "index": 406,
+      "claim_id": 1280,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 407,
+      "claim_id": 1281,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 408,
+      "claim_id": 1282,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 0.5
+    },
+    {
+      "index": 409,
+      "claim_id": 1290,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        7
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 410,
+      "claim_id": 1290,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 411,
+      "claim_id": 1290,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 412,
+      "claim_id": 1290,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 7,
+      "faithful": 1.0
+    },
+    {
+      "index": 413,
+      "claim_id": 1292,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 414,
+      "claim_id": 1298,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 415,
+      "claim_id": 1298,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        13
+      ],
+      "pred_sentence_idx": 13,
+      "faithful": 1.0
+    },
+    {
+      "index": 416,
+      "claim_id": 1303,
+      "true_label": "REFUTES",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        1
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 417,
+      "claim_id": 1303,
+      "true_label": "REFUTES",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 418,
+      "claim_id": 1316,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 419,
+      "claim_id": 1319,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 420,
+      "claim_id": 1320,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 3,
+      "faithful": 0.85
+    },
+    {
+      "index": 421,
+      "claim_id": 1332,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "REFUTES",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 422,
+      "claim_id": 1335,
+      "true_label": "SUPPORTS",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 423,
+      "claim_id": 1336,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 424,
+      "claim_id": 1337,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 0.85
+    },
+    {
+      "index": 425,
+      "claim_id": 1339,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        7,
+        8,
+        9
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 426,
+      "claim_id": 1339,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 9,
+      "faithful": 1.0
+    },
+    {
+      "index": 427,
+      "claim_id": 1344,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 428,
+      "claim_id": 1352,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 429,
+      "claim_id": 1352,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 430,
+      "claim_id": 1359,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        8
+      ],
+      "pred_sentence_idx": 8,
+      "faithful": 1.0
+    },
+    {
+      "index": 431,
+      "claim_id": 1362,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 432,
+      "claim_id": 1363,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 433,
+      "claim_id": 1368,
+      "true_label": "SUPPORTS",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        9
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 434,
+      "claim_id": 1368,
+      "true_label": "SUPPORTS",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 435,
+      "claim_id": 1368,
+      "true_label": "SUPPORTS",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        11
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 436,
+      "claim_id": 1368,
+      "true_label": "SUPPORTS",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    },
+    {
+      "index": 437,
+      "claim_id": 1370,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        10
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 0.85
+    },
+    {
+      "index": 438,
+      "claim_id": 1370,
+      "true_label": "REFUTES",
+      "pred_label": "REFUTES",
+      "true_sentences": [
+        12
+      ],
+      "pred_sentence_idx": 12,
+      "faithful": 0.85
+    },
+    {
+      "index": 439,
+      "claim_id": 1379,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 440,
+      "claim_id": 1379,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 441,
+      "claim_id": 1379,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 442,
+      "claim_id": 1379,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 443,
+      "claim_id": 1379,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        6
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 444,
+      "claim_id": 1379,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 5,
+      "faithful": 1.0
+    },
+    {
+      "index": 445,
+      "claim_id": 1382,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        3
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 446,
+      "claim_id": 1382,
+      "true_label": "REFUTES",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        5
+      ],
+      "pred_sentence_idx": 1,
+      "faithful": 1.0
+    },
+    {
+      "index": 447,
+      "claim_id": 1385,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        4
+      ],
+      "pred_sentence_idx": 4,
+      "faithful": 1.0
+    },
+    {
+      "index": 448,
+      "claim_id": 1389,
+      "true_label": "SUPPORTS",
+      "pred_label": "SUPPORTS",
+      "true_sentences": [
+        2,
+        3
+      ],
+      "pred_sentence_idx": 2,
+      "faithful": 1.0
+    },
+    {
+      "index": 449,
+      "claim_id": 1395,
+      "true_label": "NOT_ENOUGH_INFO",
+      "pred_label": "NOT_ENOUGH_INFO",
+      "true_sentences": [],
+      "pred_sentence_idx": -1,
+      "faithful": 1.0
+    }
+  ]
+}

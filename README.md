@@ -44,14 +44,15 @@ This project implements an end-to-end evidence-grounded verification pipeline th
 
 ### Step 1: Clone or Navigate to the Repository
 ```bash
-git clone <repository_url>
-cd agentic_ai
+git clone https://github.com/YuvrajRasal/biomedical-claim-verification.git
+cd biomedical-claim-verification
 ```
 
 ### Step 2: Initialize Virtual Environment
 On Linux / macOS:
 ```bash
-python3 -m venv .venv
+python -m venv .venv
+# or: python3 -m venv .venv
 source .venv/bin/activate
 ```
 
@@ -106,7 +107,7 @@ Run verification on sample index `0` (or any valid integer from `0` to `1260`):
 python run_baseline.py 0
 ```
 
-To run against claim index `1` (which tests refuting evidence):
+To run against claim index `1` (which tests supporting evidence with rationale extraction):
 ```bash
 python run_baseline.py 1
 ```
@@ -134,19 +135,19 @@ $ python run_baseline.py 0
 
 ```json
 {
-  "claim_id": 0,
-  "claim": "0-dimensional biomaterials lack inductive properties.",
+  "claim_id": 1,
+  "claim": "0-dimensional biomaterials show inductive properties.",
   "ground_truth_label": "NOT_ENOUGH_INFO",
   "baseline_prediction": {
     "verdict": "NOT_ENOUGH_INFO",
-    "confidence": 0.5,
+    "confidence": 0.0,
     "verbatim_evidence_sentence": "",
-    "scientific_rationale": "The abstract provided does not discuss the properties of 0-dimensional biomaterials, nor does it address the concept of inductive properties in biomaterials. The abstract focuses on nanotechnologies for stem cell applications, including tracking, differentiation, and transplantation, without providing information relevant to the claim about 0-dimensional biomaterials."
+    "scientific_rationale": "The abstract discusses various nanotechnologies and their applications in stem cell research, but it does not specifically mention 0-dimensional biomaterials or their inductive properties."
   }
 }
 ```
 
-When executed against sample index `1` (which contains refuting evidence):
+When executed against sample index `1` (which contains supporting evidence):
 
 ```bash
 $ python run_baseline.py 1
@@ -154,14 +155,14 @@ $ python run_baseline.py 1
 
 ```json
 {
-  "claim_id": 2,
-  "claim": "1 in 5 million in UK have abnormal PrP positivity.",
-  "ground_truth_label": "REFUTES",
+  "claim_id": 3,
+  "claim": "1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",
+  "ground_truth_label": "SUPPORTS",
   "baseline_prediction": {
-    "verdict": "REFUTES",
-    "confidence": 0.99,
-    "verbatim_evidence_sentence": "Of the 32,441 appendix samples 16 were positive for abnormal PrP, indicating an overall prevalence of 493 per million population (95% confidence interval 282 to 801 per million).",
-    "scientific_rationale": "The cited abstract reports a prevalence of abnormal PrP positivity of 493 per million, which is significantly higher than the claimed 1 in 5 million. This directly refutes the claim."
+    "verdict": "SUPPORTS",
+    "confidence": 0.9,
+    "verbatim_evidence_sentence": "In conclusion, uncommon or rare genetic variants can easily create synthetic associations that are credited to common variants, and this possibility requires careful consideration in the interpretation and follow up of GWAS signals.",
+    "scientific_rationale": "The cited abstract discusses how rare genetic variants can create 'synthetic associations' that are mistakenly attributed to common variants in genome-wide association studies (GWAS). This supports the claim that the 1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants, as it suggests that rare variants can have significant effects that are not captured by common variant analysis."
   }
 }
 ```

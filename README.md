@@ -163,6 +163,8 @@ $ python run_baseline.py 1
 }
 ```
 
+> **Baseline Evaluation Summary**: Both test cases aligned with ground truth (`NOT_ENOUGH_INFO` and `SUPPORTS`); exact evidence quotation succeeded on the support case; confidence was calibrated at 0.0 for indeterminate evidence vs. 0.90 for unequivocal literature support; Pydantic validation produced zero parsing errors. Weaknesses: oracle document dependency, no cross-study synthesis, and no study-quality assessment.
+
 ### Full Benchmark Evaluation Output (SciFact 450 Validation Claims)
 
 When evaluated across all 450 validation claims via multithreaded vLLM batching:

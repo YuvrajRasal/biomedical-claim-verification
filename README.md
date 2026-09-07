@@ -72,26 +72,48 @@ pip install -r requirements.txt
 
 ---
 
-## 6. Environment Configuration
+## 6. ASU Research Computing Voyager Setup & Authentication
 
-Export your ASU Research Computing Voyager API key:
+Follow these steps to set up ASU Research Computing Voyager access for this project:
 
-### Linux / macOS:
-```bash
-export ASU_RC_API_KEY="your_voyager_api_key_here"
-```
+### Step 1: Connect to the ASU Cisco VPN
+1. Open **Cisco Secure Client** (AnyConnect).
+2. Connect to: `sslvpn.asu.edu/2fa`
+3. Sign in with your **ASURITE** credentials and complete **Duo 2FA**.
+4. Confirm that the VPN shows as **Connected**.
 
-### Windows (PowerShell):
+### Step 2: Configure Voyager API Access
+1. Make sure you have ASU Voyager LLM API access.
+2. Follow the official ASU documentation: [https://docs.rc.asu.edu/ai/api/](https://docs.rc.asu.edu/ai/api/)
+3. Obtain your personal Voyager API key.
+
+### Step 3: Set the API Key Environment Variable
+
+**Windows (PowerShell):**
 ```powershell
-$env:ASU_RC_API_KEY="your_voyager_api_key_here"
+$env:ASU_RC_API_KEY="your_voyager_api_key"
 ```
 
-### Windows (Command Prompt):
+**Windows (Command Prompt):**
 ```cmd
-set ASU_RC_API_KEY=your_voyager_api_key_here
+set ASU_RC_API_KEY=your_voyager_api_key
 ```
 
-*(Optional fallback: The runner also automatically checks `OPENAI_API_KEY` or a local `.env` file).*
+**Linux / macOS:**
+```bash
+export ASU_RC_API_KEY="your_voyager_api_key"
+```
+
+*(Optional fallback: The runner also automatically checks a local `.env` file or `OPENAI_API_KEY`).*
+
+> [!CAUTION]
+> **Security Notice**: Never commit, publish, or share your Voyager API key.
+
+### Step 4: Endpoint & Model Specifications
+The project utilizes:
+- **API Endpoint**: `https://openai.rc.asu.edu/v1`
+- **Model**: `hosted_vllm/llama4-scout-17b`
+- **API Key Variable**: `ASU_RC_API_KEY`
 
 ---
 

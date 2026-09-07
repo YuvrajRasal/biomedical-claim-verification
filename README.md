@@ -67,11 +67,7 @@ You can install all dependencies via the requirements file:
 ```bash
 pip install -r requirements.txt
 ```
-Or install the packages directly in your terminal:
-```bash
-pip install "datasets>=2.18.0,<3.0.0" pydantic openai
-```
-> **Notice on `datasets`**: Ingesting the Hugging Face `allenai/scifact` benchmark dynamically requires the `datasets` package. Specifying `datasets>=2.18.0,<3.0.0` ensures full compatibility with SciFact's dataset loader script.
+> **Notice on `datasets`**: Ingesting the Hugging Face `allenai/scifact` benchmark dynamically requires the `datasets` package. Specifying `datasets>=2.18.0,<3.0.0` (pinned in `requirements.txt`) ensures full compatibility with SciFact's dataset loader script.
 
 
 ---
